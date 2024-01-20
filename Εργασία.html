@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta title="Survey">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+        background-color:green;
+        color:white;
+        max-width:100%
+      }
+      h1{
+        text-align:center;
+      }
+      input{
+        margin-left:5px;
+        margin-bottom:15px;
+        margin-top:7px;
+
+
+      }
+      .c1{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        background-color:yellow;
+        color:black;
+        width:50%
+
+      }
+      .c2{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        background-color:blue;
+        width:50%;
+      }
+      .c3{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        background-color:red;
+        width:50%;
+
+      }
+      .c4{
+        margin-top:15px;
+        margin-left:1px;
+        margin-right:1px;
+
+
+      }
+      .p{
+        color:fuchsia;
+        font-size:20;
+
+      }
+      #textarea:hover{
+        background-color:yellow;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Fill the questions</h1>
+    <p id="description">
+      This is a survey so answer honestly
+    </p>
+    <form id="survey-form">
+        <label for="name-label" class="c1">Enter your name here:</label>
+        <input class="c1" id="name-label" type="text" placeholder="John Doe" required />
+      <label for="email-label" class="c2">Enter your email here:</label>
+      <input id="email-label" type="email" class="c2" placeholder="example@gmail.com" style="color:silver" autocomplete="on" required />
+      <label for="number-label" class="c3">Enter a number here:</label>
+      <input type="number" id="number-label" class="c3" placeholder="666 (joke)" min="7" max="999"/>
+      <select id="dropdown">
+        <option>Hello</option>
+        <option>Bye</option>
+      </select><br />
+      <p class="p">Choose what you are.</p>
+      <input type="radio" name="question" class="c4" value="nigga"/>Nigga
+      <input type="radio" name="question" class="c4" value="no-nigga"/>No-nigga
+      <br />
+      <p class="p">Choose between those three options</p>
+      <input type="checkbox" value="x" />X
+      <input type="checkbox" value="y" />Y
+      <input type="checkbox" value="Z" />Z
+      <input type="checkbox" value="A" />A<br />
+      <p class="p">Here you can write your opinions about the survey</p>
+      <textarea id="textarea" maxlength="15" minlength="1">
+      </textarea>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+			
+
